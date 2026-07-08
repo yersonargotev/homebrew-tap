@@ -1,10 +1,10 @@
 class Tabby < Formula
   desc "Herdr plugin for automatic tab labels"
   homepage "https://github.com/yersonargotev/tabby"
-  version "0.1.3"
+  version "0.1.4"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/yersonargotev/tabby/releases/download/v0.1.3/tabby-aarch64-apple-darwin.tar.xz"
-    sha256 "e6847b8e8e892cca694c67e9a00653aeda73a510e72872a3a63528e83062b9b4"
+    url "https://github.com/yersonargotev/tabby/releases/download/v0.1.4/tabby-aarch64-apple-darwin.tar.xz"
+    sha256 "9ecfbcceaa9b7e62f35067021bbe0a46f21106f23f6e7f4a590a75e205a2a082"
   end
   license "Apache-2.0"
 
