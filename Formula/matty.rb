@@ -1,25 +1,25 @@
 class Matty < Formula
   desc "AI coding workflow installer"
   homepage "https://github.com/yersonargotev/matty"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/matty/releases/download/v0.1.0/matty_v0.1.0_darwin_arm64", using: :nounzip
-      sha256 "a157494d0cf9132ca95fa54d52502756dae6f88185ad13c247637ab842c20dad"
+      url "https://github.com/yersonargotev/matty/releases/download/v0.1.1/matty_v0.1.1_darwin_arm64", using: :nounzip
+      sha256 "1a61dd5f3fe8e609dd23a852d5abfe6511d4b907def57d28977b9dbb05cfa877"
     else
-      url "https://github.com/yersonargotev/matty/releases/download/v0.1.0/matty_v0.1.0_darwin_amd64", using: :nounzip
-      sha256 "399ab30824840bc6f2c5740c872ccc95f89817894c9c1c4a7da04a68599b9bb1"
+      url "https://github.com/yersonargotev/matty/releases/download/v0.1.1/matty_v0.1.1_darwin_amd64", using: :nounzip
+      sha256 "f849f9241cbb219f0c0b3d10ee542ca9f99204ae967f0a2bdf04de0d50dabf76"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/matty/releases/download/v0.1.0/matty_v0.1.0_linux_arm64", using: :nounzip
-      sha256 "bceea07c2c3e9a07d49f7ffff8b189e068bc7ea9b5c2ceec5db5f183b6b72844"
+      url "https://github.com/yersonargotev/matty/releases/download/v0.1.1/matty_v0.1.1_linux_arm64", using: :nounzip
+      sha256 "319546b279853f95505d1943a388eab9e04adee74e06dc65ee3dd4ccf8efb220"
     else
-      url "https://github.com/yersonargotev/matty/releases/download/v0.1.0/matty_v0.1.0_linux_amd64", using: :nounzip
-      sha256 "eaae389795fc8fe106f95bea2bf249d9208eb5d691ab1a1ee6bf5440a2fdb2f2"
+      url "https://github.com/yersonargotev/matty/releases/download/v0.1.1/matty_v0.1.1_linux_amd64", using: :nounzip
+      sha256 "dda93b3557f282e05cd33389e495cf4f8cd7478b6493d0649917947a00ccf0aa"
     end
   end
 
