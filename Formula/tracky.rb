@@ -1,14 +1,14 @@
 class Tracky < Formula
   desc "Local-first, review-first personal finance CLI"
   homepage "https://github.com/yersonargotev/tracky"
-  version "0.2.1"
+  version "0.2.2"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/yersonargotev/tracky/releases/download/v0.2.1/tracky-aarch64-apple-darwin.tar.xz"
-    sha256 "d52f47e0afc0df88b668985e72cc740b1a88bc93f1e53b8d0792c199df6cec5d"
+    url "https://github.com/yersonargotev/tracky/releases/download/v0.2.2/tracky-aarch64-apple-darwin.tar.xz"
+    sha256 "70af87f52778c86196ef0058be7f3d73f4a00767e9c3999efa38808ee8dab075"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/yersonargotev/tracky/releases/download/v0.2.1/tracky-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "a6f55e530d96a05b5c8f1549f4759784c0760c745e0cdc6c7e569e15487910d6"
+    url "https://github.com/yersonargotev/tracky/releases/download/v0.2.2/tracky-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "5b7323e42b3217aaa27de6c26d517e1c338d074197ac92278b38f735a9970861"
   end
   license "MIT"
 
