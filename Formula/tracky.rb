@@ -1,20 +1,19 @@
 class Tracky < Formula
   desc "Local-first, review-first personal finance CLI"
   homepage "https://github.com/yersonargotev/tracky"
-  version "0.2.3-rc.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/tracky/releases/download/v0.2.3-rc.1/tracky-aarch64-apple-darwin.tar.xz"
-      sha256 "fb8aa113f50c8bd139b141fb2a9dca019647408476e727d6523768146239536c"
+      url "https://github.com/yersonargotev/tracky/releases/download/v0.2.4/tracky-aarch64-apple-darwin.tar.xz"
+      sha256 "1f372afbf7e87cd411564aab455b641f99c115ba175efd6e39ee5e4284059fdd"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yersonargotev/tracky/releases/download/v0.2.3-rc.1/tracky-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7d9e4755b10d77d5a0fa9cd8792e378bd9a021c15810f68d50b3ff549fb7e365"
+      url "https://github.com/yersonargotev/tracky/releases/download/v0.2.4/tracky-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "396a03ce5b31061400e3307faf244485c13880567a462a053966862d4fe138e0"
     end
   end
 
@@ -23,6 +22,6 @@ class Tracky < Formula
   end
 
   test do
-    assert_match "tracky 0.2.3", shell_output("#{bin}/tracky --version")
+    assert_match "tracky 0.2.4", shell_output("#{bin}/tracky --version")
   end
 end
