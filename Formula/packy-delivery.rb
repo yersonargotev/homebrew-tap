@@ -1,26 +1,26 @@
 class PackyDelivery < Formula
   desc "Resumable issue-delivery orchestrator for Packy"
   homepage "https://github.com/yersonargotev/packy-delivery"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.5.0/packy-deliver_v0.5.0_darwin_arm64", using: :nounzip
-      sha256 "bc436dadc1abdb57db03d9d2a79d0ec978303e942189d0461055b2a4a7b558c4"
+      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.6.0/packy-deliver_v0.6.0_darwin_arm64", using: :nounzip
+      sha256 "186568df96209b8315050816a08c7f129ef4c70623903f3b8115e8af951643b4"
     else
-      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.5.0/packy-deliver_v0.5.0_darwin_amd64", using: :nounzip
-      sha256 "d7c2dbb6a0d83810450c0e28a40e6eb75d273af42c7028d345173c0d541d2176"
+      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.6.0/packy-deliver_v0.6.0_darwin_amd64", using: :nounzip
+      sha256 "d0f71508b3f7b1d9c60393bc2d05eb2355a6f6427cc181672fec575cbb9f73e4"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.5.0/packy-deliver_v0.5.0_linux_arm64", using: :nounzip
-      sha256 "fc93c4201ce09c466ab45bace5b207b09a211598d99ad855d55f94e1629876a3"
+      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.6.0/packy-deliver_v0.6.0_linux_arm64", using: :nounzip
+      sha256 "3cd787f6872a46c75762b4250604656b4659ae77d5c04bb07e3291d43d0d80da"
     else
-      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.5.0/packy-deliver_v0.5.0_linux_amd64", using: :nounzip
-      sha256 "4de57b072dda4538f9daceba780aa725327289efeeecac2729d7f3915f9e035f"
+      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.6.0/packy-deliver_v0.6.0_linux_amd64", using: :nounzip
+      sha256 "259c6baa8ef20eeab3ab022f7d250e3d2c2257112f2fdcb21d0cacede667cc2e"
     end
   end
 
