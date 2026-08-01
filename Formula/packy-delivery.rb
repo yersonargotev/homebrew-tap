@@ -1,26 +1,26 @@
 class PackyDelivery < Formula
   desc "Resumable issue-delivery orchestrator for Packy"
   homepage "https://github.com/yersonargotev/packy-delivery"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.6.0/packy-deliver_v0.6.0_darwin_arm64", using: :nounzip
-      sha256 "186568df96209b8315050816a08c7f129ef4c70623903f3b8115e8af951643b4"
+      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.6.1/packy-deliver_v0.6.1_darwin_arm64", using: :nounzip
+      sha256 "dea9f6cbd4cda1989cc2a60501092a24ba5b6ed50cd0b032a180aad4db2ae4ca"
     else
-      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.6.0/packy-deliver_v0.6.0_darwin_amd64", using: :nounzip
-      sha256 "d0f71508b3f7b1d9c60393bc2d05eb2355a6f6427cc181672fec575cbb9f73e4"
+      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.6.1/packy-deliver_v0.6.1_darwin_amd64", using: :nounzip
+      sha256 "69813e32a0bf0786b53ccdc40c3020bd4ca69d9198ed1ce77d8f2715258570e3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.6.0/packy-deliver_v0.6.0_linux_arm64", using: :nounzip
-      sha256 "3cd787f6872a46c75762b4250604656b4659ae77d5c04bb07e3291d43d0d80da"
+      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.6.1/packy-deliver_v0.6.1_linux_arm64", using: :nounzip
+      sha256 "9938749e0ff1dd3d6eba6329ae8dc4a735101ddd5b911a331553cdce4dd875a4"
     else
-      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.6.0/packy-deliver_v0.6.0_linux_amd64", using: :nounzip
-      sha256 "259c6baa8ef20eeab3ab022f7d250e3d2c2257112f2fdcb21d0cacede667cc2e"
+      url "https://github.com/yersonargotev/packy-delivery/releases/download/v0.6.1/packy-deliver_v0.6.1_linux_amd64", using: :nounzip
+      sha256 "a4ce5c8c8e3ad16c7ad70f371f09aa13eec607feee627f0e69471f41e1079080"
     end
   end
 
