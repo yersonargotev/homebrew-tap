@@ -1,32 +1,30 @@
 class Packy < Formula
   desc "AI coding workflow installer"
   homepage "https://github.com/yersonargotev/packy"
-  version "0.1.16"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/packy/releases/download/v0.1.16/packy_v0.1.16_darwin_arm64", using: :nounzip
-      sha256 "7b492a9c434b15aab9dcaafca78f6f3f69e4e2db7761e95ce9f93917b7f5966d"
+      url "https://github.com/yersonargotev/packy/releases/download/v0.2.0/packy_v0.2.0_darwin_arm64.tar.gz"
+      sha256 "b20f949b3cd22fb7045a030291d54bcd398a588bcabb176fa0c29f9787034032"
     else
-      url "https://github.com/yersonargotev/packy/releases/download/v0.1.16/packy_v0.1.16_darwin_amd64", using: :nounzip
-      sha256 "d8c9250b7f18f680aeb01ebe07f8a0a3842f32bba83444286260155321f3eaa2"
+      url "https://github.com/yersonargotev/packy/releases/download/v0.2.0/packy_v0.2.0_darwin_amd64.tar.gz"
+      sha256 "66a32d784b3212a76a5e589c76d751fd241768d01c0899e63860255f876a80ab"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/packy/releases/download/v0.1.16/packy_v0.1.16_linux_arm64", using: :nounzip
-      sha256 "14ff80fe764a3700b3df948259c477165806d1bceb170fba534d124910e48cf3"
+      url "https://github.com/yersonargotev/packy/releases/download/v0.2.0/packy_v0.2.0_linux_arm64.tar.gz"
+      sha256 "0ed2e9325792e9b13c2c9eb95e8f33003596f381b2802a3f66c6f9fc661e5bd1"
     else
-      url "https://github.com/yersonargotev/packy/releases/download/v0.1.16/packy_v0.1.16_linux_amd64", using: :nounzip
-      sha256 "7e9d2d1d7ffadd6b136d8183cbeda876b2187c588994c8fa057431e6b1253d13"
+      url "https://github.com/yersonargotev/packy/releases/download/v0.2.0/packy_v0.2.0_linux_amd64.tar.gz"
+      sha256 "64d1d5ca3385ab931ec67088146bda8804c0169da6968542c3e0e0ac152fa895"
     end
   end
 
   def install
-    downloaded_binary = Dir["packy_*"].first
-    odie "downloaded packy binary not found" if downloaded_binary.nil?
-    bin.install downloaded_binary => "packy"
+    bin.install "packy"
   end
 
   test do
