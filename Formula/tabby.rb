@@ -1,10 +1,10 @@
 class Tabby < Formula
   desc "Herdr plugin for automatic tab labels"
   homepage "https://github.com/yersonargotev/tabby"
-  version "0.1.11"
+  version "0.1.13"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/yersonargotev/tabby/releases/download/v0.1.11/tabby-aarch64-apple-darwin.tar.xz"
-    sha256 "d2dcc8441716c90aa8a57a384943ef5341e556dd420ac5e753775d55ea49ac50"
+    url "https://github.com/yersonargotev/tabby/releases/download/v0.1.13/tabby-aarch64-apple-darwin.tar.xz"
+    sha256 "00fb027a17f7251413a22e97abd8298c7967a9b5307f9306305c8e52ff10b30c"
   end
   license "Apache-2.0"
 
@@ -28,7 +28,9 @@ class Tabby < Formula
   end
 
   def install
-    bin.install "tabby" if OS.mac? && Hardware::CPU.arm?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "tabby"
+    end
 
     install_binary_aliases!
 
