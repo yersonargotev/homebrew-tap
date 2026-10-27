@@ -1,25 +1,25 @@
 class Packy < Formula
   desc "AI coding workflow installer"
   homepage "https://github.com/yersonargotev/packy"
-  version "0.2.31"
+  version "0.2.32"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/packy/releases/download/v0.2.31/packy_v0.2.31_darwin_arm64.tar.gz"
-      sha256 "2f1946ff545e8c5b71ecdd005d6c500b6c514721d1f52b52c723a262ec9f351b"
+      url "https://github.com/yersonargotev/packy/releases/download/v0.2.32/packy_v0.2.32_darwin_arm64.tar.gz"
+      sha256 "c477d55df114fb2d9f057f5369c51cd3b806412e1003adce8887d89c60a713fd"
     else
-      url "https://github.com/yersonargotev/packy/releases/download/v0.2.31/packy_v0.2.31_darwin_amd64.tar.gz"
-      sha256 "b9a3999e49cda98715205470d33feafefe3549ebde0b92bed92a6bbc32506fe9"
+      url "https://github.com/yersonargotev/packy/releases/download/v0.2.32/packy_v0.2.32_darwin_amd64.tar.gz"
+      sha256 "a4bb4c2cd6760430386958febe772622c3d413b5a7b4164a1ccf5518f30f03f5"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/packy/releases/download/v0.2.31/packy_v0.2.31_linux_arm64.tar.gz"
-      sha256 "40df4eeedd17b5b9c4a39a60090902a78837869e47471eb2596aee43bdac6530"
+      url "https://github.com/yersonargotev/packy/releases/download/v0.2.32/packy_v0.2.32_linux_arm64.tar.gz"
+      sha256 "9d3fe5e61f5f1106b8e40a3137bb8a9c13e3941bb7dae6a21125f7ccb6caedb4"
     else
-      url "https://github.com/yersonargotev/packy/releases/download/v0.2.31/packy_v0.2.31_linux_amd64.tar.gz"
-      sha256 "9128a6e3688fbae992c69b334c3d34b9e8c3274515dee57b8d711c4106bbcfa3"
+      url "https://github.com/yersonargotev/packy/releases/download/v0.2.32/packy_v0.2.32_linux_amd64.tar.gz"
+      sha256 "ad94960087c33d3413552fd66348215dc9d94aa7ec656ed5950df79e15044c3d"
     end
   end
 
