@@ -1,25 +1,25 @@
 class Dots < Formula
   desc "Safe dotfiles installer"
   homepage "https://github.com/yersonargotev/dots"
-  version "0.95.0"
+  version "0.96.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/dots/releases/download/v0.95.0/dots_v0.95.0_darwin_arm64", using: :nounzip
-      sha256 "f57be175c63b8b379d02d22469622aa1370c2cfc25a9a64bd73ff4b23e028546"
+      url "https://github.com/yersonargotev/dots/releases/download/v0.96.0/dots_v0.96.0_darwin_arm64", using: :nounzip
+      sha256 "b93b8ca845a3ed7f90daef0dbfb1c2b1e29d33261ef0fff9a6d5cefb70fcee59"
     else
-      url "https://github.com/yersonargotev/dots/releases/download/v0.95.0/dots_v0.95.0_darwin_amd64", using: :nounzip
-      sha256 "f9d78a531af4fc0b243a65d94a337ea3b7ac1441d183eb5d3749aff5bdf7a00c"
+      url "https://github.com/yersonargotev/dots/releases/download/v0.96.0/dots_v0.96.0_darwin_amd64", using: :nounzip
+      sha256 "7ee07558ecb7e754c3389fbf5b502cacd4d6c36d979430da73ab65c79687cb42"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yersonargotev/dots/releases/download/v0.95.0/dots_v0.95.0_linux_arm64", using: :nounzip
-      sha256 "5299854ef75ed8bfaff670dc30ce87989ec8e9007aa20ac5b1556d5353094b0e"
+      url "https://github.com/yersonargotev/dots/releases/download/v0.96.0/dots_v0.96.0_linux_arm64", using: :nounzip
+      sha256 "5b4a2b8f7b0afd83481265500ac1d4bb73b3487fc8f823ba8ae60cec80dfbb07"
     else
-      url "https://github.com/yersonargotev/dots/releases/download/v0.95.0/dots_v0.95.0_linux_amd64", using: :nounzip
-      sha256 "8cc3983ec9750c906fed1fae124c19bd3106f8d2822564ffd500408a5f51b6f6"
+      url "https://github.com/yersonargotev/dots/releases/download/v0.96.0/dots_v0.96.0_linux_amd64", using: :nounzip
+      sha256 "8668bde310698092c80e5c41d6df59569188d7f0f125b9aa60fc168aacffd06f"
     end
   end
 
